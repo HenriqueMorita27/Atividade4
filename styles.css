@@ -1,0 +1,149 @@
+/* ===== Estilos gerais ===== */
+body {
+    background-color: #eaf2fa;
+    color: #222222;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    color: #4da3ff;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 8px 0;
+}
+
+/* ===== Cabeçalho e rodapé ===== */
+header {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 6px solid #0066b1;
+}
+
+header p {
+    margin: 0;
+}
+
+footer {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    border-top: 6px solid #0066b1;
+}
+
+footer p {
+    margin: 4px 0;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+/* ===== Tabela ===== */
+.tabela-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    background-color: #ffffff;
+    border: 4px double #003d6b;
+    border-collapse: collapse;
+    border-radius: 6px;
+}
+
+caption {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    color: #003d6b;
+    padding-bottom: 12px;
+}
+
+/* Células de cabeçalho e de dados */
+th, td {
+    border: 1px solid #7aa7cc;
+    padding: 15px 10px;
+    text-align: center;
+    vertical-align: middle;
+    width: 12%;
+}
+
+/* Cabeçalho da tabela: fundo azul e texto branco */
+thead th {
+    background-color: #0066b1;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+/* Cabeçalho das linhas (MANHÃ, TARDE, NOITE) */
+tbody th {
+    background-color: #003d6b;
+    color: #ffffff;
+    text-align: left;
+    padding-left: 15px;
+}
+
+/* Linhas pares com a segunda cor de fundo (zebrado) */
+tbody tr:nth-child(even) td {
+    background-color: #d7e8f8;
+}
+
+/* Células especiais (colspan e rowspan) */
+.aula {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 17px;
+    border: 2px solid #0066b1;
+}
+
+.lazer {
+    background-color: #ffe98a;
+    color: #5a4600;
+    font-weight: bold;
+}
+
+/* ===== Legenda ===== */
+.legenda {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.caixa-aula,
+.caixa-lazer {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 6px;
+    vertical-align: middle;
+    border: 2px solid #0066b1;
+}
+
+.caixa-aula {
+    background-color: #1c1c1c;
+}
+
+.caixa-lazer {
+    background-color: #ffe98a;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 700px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    table {
+        min-width: 650px;
+    }
+}

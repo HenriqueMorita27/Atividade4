@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- Atividade de HTML e CSS - Tabela: minha rotina semanal -->
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tabela com a minha rotina semanal de estudante de Engenharia de Software.">
+    <meta name="author" content="Henrique">
+
+    <title>Minha Rotina Semanal</title>
+
+    <!-- Fonte do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Minha Rotina Semanal</h1>
+    </header>
+
+    <main>
+
+        <!-- Esta div deixa a tabela rolar na horizontal em telas pequenas -->
+        <div class="tabela-container">
+
+            <table>
+                <caption>Rotina da semana - Como um estudante de Engenharia de Software</caption>
+
+                <thead>
+                    <tr>
+                        <th>Período</th>
+                        <th>DOM</th>
+                        <th>SEG</th>
+                        <th>TER</th>
+                        <th>QUA</th>
+                        <th>QUI</th>
+                        <th>SEX</th>
+                        <th>SAB</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">MANHÃ</th>
+                        <td>Dormir até mais tarde</td>
+                        <td>Academia</td>
+                        <td>Estudar</td>
+                        <td>Academia</td>
+                        <td>Estudar</td>
+                        <td>Dormir até   mais tarde</td>
+                        <!-- rowspan: esta célula ocupa as linhas da manhã e da tarde de sábado -->
+                        <td>Aula de Ingles</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">TARDE</th>
+                        <td>Almoço em família</td>
+                        <td>Estudar</td>
+                        <td>Jogar algum video game </td>
+                        <td>Trabalhos da faculdade</td>
+                        <td>Jogar algum video game </td>
+                        <td>Academia</td>
+                        <td>Descansar</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">NOITE</th>
+                        <td>Descasar</td>
+                        <!-- colspan: de segunda a quinta à noite é aula, então 4 colunas viram uma -->
+                        <td colspan="4" class="aula"> Aula na UniFil (segunda a quinta)</td>
+                        <td>Sair com amigos</td>
+                        <td>Sair com os amigos</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <p class="legenda">
+            <strong>Legenda:</strong>
+            <span class="caixa-aula"></span> aula &nbsp; 
+        </p>
+
+    </main>
+
+    <footer>
+        <p>Página feita para a atividade de HTML e CSS(Tabela) -Feita por Henrique Morita.</p>
+    </footer>
+
+</body>
+
+</html>
